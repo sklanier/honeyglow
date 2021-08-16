@@ -1,0 +1,66 @@
+{% schema %}
+  {
+    "name": "Product CTA",
+    "settings": []
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+<script src="{{ 'marquee.js' | asset_url | defer }}"></script>
+
+{% assign list = product.metafields.ingredients.list %}
+
+{% if list != blank %}
+<div id="product-cta-container">
+  	<ul class="slider" id="product-cta-grid">
+       <li class="pcta"><h2 class="product-cta-text">all natural</h2></li>
+      	<span>&#8226;</span>
+       <li class="pcta"><h2 class="product-cta-text">cruelty free</h2></li>
+      	<span>&#8226;</span>
+       <li class="pcta"><h2 class="product-cta-text">plant-based</h2></li>
+      	<span>&#8226;</span>
+       <li class="pcta"><h2 class="product-cta-text">organic</h2></li>
+      	<span>&#8226;</span>
+       <li class="pcta"><h2 class="product-cta-text">paraben-free</h2></li>
+      	<span>&#8226;</span>
+       <li class="pcta"><h2 class="product-cta-text">eco friendly</h2></li>
+      	<span>&#8226;</span>
+       <li class="pcta"><h2 class="product-cta-text">sustainable</h2></li>
+    </ul>
+</div>
+
+<div id="product-cta-container2">
+  	<h3 id="slider">
+       all natural&nbsp;&nbsp;&nbsp;&nbsp;&#8226&nbsp;&nbsp;&nbsp;&nbsp;cruelty free&nbsp;&nbsp;&nbsp;&nbsp;&#8226&nbsp;&nbsp;&nbsp;&nbsp;plant-based&nbsp;&nbsp;&nbsp;&nbsp;&#8226&nbsp;&nbsp;&nbsp;&nbsp;organic&nbsp;&nbsp;&nbsp;&nbsp;&#8226&nbsp;&nbsp;&nbsp;&nbsp;paraben-free&nbsp;&nbsp;&nbsp;&nbsp;&#8226&nbsp;&nbsp;&nbsp;&nbsp;eco friendly&nbsp;&nbsp;&nbsp;&nbsp;&#8226&nbsp;&nbsp;&nbsp;&nbsp;sustainable&nbsp;&nbsp;&nbsp;&nbsp;&#8226&nbsp;&nbsp;&nbsp;&nbsp;
+    </h3>
+</div>
+  
+{% endif %}
+
+<script>
+  if(window.innerWidth < 481){
+    new Marquee('slider', {
+
+      // once or continuous
+      continuous: true,
+
+      // 'rtl' or 'ltr'
+      direction: 'rtl',
+
+      // pause between loops
+      delayAfter: 0,
+
+      // when to start
+      delayBefore: 0,
+
+      // scroll speed
+      speed: 0.3,
+
+      // loops
+      loops: -1
+
+    });
+  }
+</script>

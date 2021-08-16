@@ -1,0 +1,126 @@
+<div id="lipmobilesection">
+    <div class="text-center">
+        <h1 class="lip-title-mobile" style="font-size:13px !important;-webkit-text-stroke-width: 0px !important;"> {{ section.settings.title }} </h1>
+    </div>
+  	<div class="text-center">
+        <h1 class="lip-sub" style="margin-bottom:8px !important;-webkit-text-stroke-width: 0px !important;">plant butter for</h1> 
+     	<h1 class="lip-sub" style="padding-bottom:15px !important;-webkit-text-stroke-width: 0px !important;"><span style="font-family: 'Meritocracy'; font-size: 1.5em;">your pout</span></h1>
+  	</div>
+    <section class="lip-mobile-wrapper">      
+      <div class="lip-container">
+        <div class="lip-img-container">
+           <a href="https://www.honeyglowhive.com/products/lip-butter?variant=39746249326775">
+            <img class="mintmatcha-mobile" src="{{ section.settings.butter_img_1 | img_url: 'master'}}" width="100%" alt=""/>
+           </a>
+        </div>
+      </div>
+      <div class="lip-container">
+        <div class="lip-img-container">
+           <a href="https://www.honeyglowhive.com/products/lip-butter?variant=39746249359543">
+            <img class="coconutcreme-mobile" src="{{ section.settings.butter_img_2 | img_url: 'master'}}" width="100%" alt=""/>
+           </a>
+        </div>
+      </div>
+      <div class="lip-container">
+        <div class="lip-img-container">
+           <a href="https://www.honeyglowhive.com/products/lip-butter?variant=39746249457847">
+            <img class="tangerine-mobile" src="{{ section.settings.butter_img_5 | img_url: 'master'}}" width="100%" alt=""/>
+           </a>
+        </div>
+      </div>
+      <div class="lip-container">
+        <div class="lip-img-container">
+           <a href="https://www.honeyglowhive.com/products/lip-butter?variant=39746249425079">
+            <img class="pomegranatedragonfruit-mobile" src="{{ section.settings.butter_img_4 | img_url: 'master'}}" width="100%" alt=""/>
+           </a>
+        </div>
+
+      </div>
+      <div class="lip-container">
+        <div class="lip-img-container">
+           <a href="https://www.honeyglowhive.com/products/lip-butter?variant=39746249392311">
+            <img class="passionflower-mobile" src="{{ section.settings.butter_img_3 | img_url: 'master'}}" width="100%" alt=""/>
+           </a>
+        </div>
+      </div>
+    </section>
+</div>
+<div class="img-container">
+  <img class="gradient-border-mobile" src="{{ section.settings.butter_border | img_url: 'master'}}" width="100%" alt=""/>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Lip Mobile",
+    "settings": [
+        {
+            "id": "title",
+            "type": "text",
+            "label": "title",
+            "default": "taste our"
+        },
+        {
+            "id": "subtitle",
+            "type": "text",
+            "label": "subtitle",
+			"default": "plant butter for your pout"
+        },
+		
+		
+		{
+            "id": "butter_img_1",
+            "type": "image_picker",
+            "label": "Add image"
+        },
+		
+		
+		{
+            "id": "butter_img_2",
+            "type": "image_picker",
+            "label": "Add image"
+        },
+		
+		
+		{
+            "id": "butter_img_3",
+            "type": "image_picker",
+            "label": "Add image"
+        },
+		
+		
+		{
+            "id": "butter_img_4",
+            "type": "image_picker",
+            "label": "Add image"
+        },
+		
+		
+		{
+            "id": "butter_img_5",
+            "type": "image_picker",
+            "label": "Add image"
+        },
+		{
+            "id": "butter_border",
+            "type": "image_picker",
+            "label": "Add image"
+        }
+		
+    ],
+    "presets": [
+        {
+            "name": "Lip Mobile",
+            "category": "Custom"
+
+        }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

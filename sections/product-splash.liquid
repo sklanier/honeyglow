@@ -1,0 +1,145 @@
+<div id="splashsection">
+    <div class="text-center">
+        <p class="splash-title"> {{ section.settings.title }} </p>
+    </div>
+  	<div class="title-img-container">
+      <img class="title-image" src="{{ section.settings.title_img | img_url: 'master'}}" width="330px" alt=""/>
+    </div>
+    <hr class="divider"/>
+    <section class="splash-wrapper-new">
+        <div class="product-table-new">
+            <div class="product-row-new">
+                <div class="p1-new">
+                    <a href="https://www.honeyglowhive.com/products/liquid-gold-face-mask">
+                      <img class="img1-new" src="{{ section.settings.splash1 | img_url: 'master'}}" width="400px" alt=""/>
+                      
+                    </a>
+                  <div class="text-container1-new">
+                        <a href="https://www.honeyglowhive.com/products/liquid-gold-face-mask"><h3 class="splash-subtitle-bold product-desc" style="-webkit-text-stroke-width: .5px;"> {{ section.settings.desc1 }} </h3></a>
+                        <h4 class="product-price"> {{ section.settings.price1 }} </h4>
+                    </div>
+                </div>
+                <div class="p2-new">
+                    <a href="https://www.honeyglowhive.com/products/luminous-cleansing-toner">
+                      <img class="img2-new" src="{{ section.settings.splash2 | img_url: 'master'}}" width="400px" alt=""/>
+                      
+                    </a>
+                    <div class="text-container2-new">
+                        <a href="https://www.honeyglowhive.com/products/luminous-cleansing-toner"><h3 class="splash-subtitle-bold product-desc" style="-webkit-text-stroke-width: .5px;"> {{ section.settings.desc2 }} </h3></a>
+                        <h4 class="product-price"> {{ section.settings.price2 }} </h4>
+                    </div>
+                </div>
+              	<div class="p3-new">
+                    <a href="https://www.honeyglowhive.com/products/whipped-face-butter">
+                      <img class="img3-new" src="{{ section.settings.splash3 | img_url: 'master'}}" width="400px" alt=""/>
+                      
+                    </a>
+                    <div class="text-container3-new">
+                        <a href="https://www.honeyglowhive.com/products/whipped-face-butter"><h3 class="splash-subtitle-bold product-desc" style="-webkit-text-stroke-width: .5px;"> {{ section.settings.desc3 }} </h3></a>
+                        <h4 class="product-price"> {{ section.settings.price3 }} </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Product Splash",
+    "settings": [
+        {
+            "id": "title",
+            "type": "text",
+            "label": "title",
+            "default": "all natural, plant-based"
+        },
+        {
+            "id": "title_img",
+            "type": "image_picker",
+            "label": "Add image"
+        },
+        {
+            "id": "desc1",
+            "type": "text",
+            "label": "description 1",
+            "default": "liquid gold <br> face mask"
+        },
+        {
+            "id": "price1",
+            "type": "text",
+            "label": "price 1",
+            "default": "from $25"
+        },
+        {
+            "id": "splash1",
+            "type": "image_picker",
+            "label": "Add image"
+        },
+{
+            "id": "splash1_mobile",
+            "type": "image_picker",
+            "label": "Add mobile image"
+        },
+        {
+            "id": "desc2",
+            "type": "text",
+            "label": "description 2",
+            "default": "luminous cleansing toner"
+        },
+        {
+            "id": "price2",
+            "type": "text",
+            "label": "price 2",
+            "default": "from $16"
+        },
+        {
+            "id": "splash2",
+            "type": "image_picker",
+            "label": "Add image"
+        },
+{
+            "id": "splash2_mobile",
+            "type": "image_picker",
+            "label": "Add mobile image"
+        },
+        {
+            "id": "desc3",
+            "type": "text",
+            "label": "description 3",
+            "default": "whipped face butter"
+        },
+        {
+            "id": "price3",
+            "type": "text",
+            "label": "price 3",
+            "default": "from $16"
+        },
+        {
+            "id": "splash3",
+            "type": "image_picker",
+            "label": "Add image"
+        },
+		{
+            "id": "splash3_mobile",
+            "type": "image_picker",
+            "label": "Add mobile image"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Product Splash",
+            "category": "Custom"
+
+        }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

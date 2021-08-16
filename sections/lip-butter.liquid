@@ -1,0 +1,207 @@
+<div id="lipsection">
+    <div class="text-center">
+        <h1 class="lip-title" style="-webkit-text-stroke-width: 0px !important;"> {{ section.settings.title }} </h1>
+    </div>
+  	<div class="text-center">
+      <h1 class="lip-sub" style="-webkit-text-stroke-width: 0px !important;">plant butter &nbsp;<span style="font-family: 'Meritocracy'; font-size: 1.5em;">for your pout</span></h1>
+  	</div>
+    <section class="lip-wrapper">
+        <div class="product-table">
+            <div class="product-row">
+                <div class="product-container">
+                  <div class="img-container">
+                     <a href="https://www.honeyglowhive.com/products/lip-butter?variant=39746249326775">
+                      <img class="mintmatcha" src="{{ section.settings.butter_img_1 | img_url: 'master'}}" width="165px" alt=""/>
+                     </a>
+                  </div>
+                  <div class="desc-txt">
+                    <a href="https://www.honeyglowhive.com/products/lip-butter?variant=39746249326775"><p> {{ section.settings.butter_title1 }} </p></a>
+                  </div>
+                  <div class="price-txt">
+                    <p class="product-price"> {{ section.settings.butter_price1 }} </p>
+                  </div>
+              	</div>
+              	<div class="product-container">
+                  <div class="img-container">
+                     <a href="https://www.honeyglowhive.com/products/lip-butter?variant=39746249359543">
+                      <img class="coconutcreme" src="{{ section.settings.butter_img_2 | img_url: 'master'}}" width="165px" alt=""/>
+                     </a>
+                  </div>
+                  <div class="desc-txt">
+                    <a href="https://www.honeyglowhive.com/products/lip-butter?variant=39746249359543"><p> {{ section.settings.butter_title2 }} </p></a>
+                  </div>
+                  <div class="price-txt">
+                    <p class="product-price"> {{ section.settings.butter_price2 }} </p>
+                  </div>
+              	</div>
+              	<div class="product-container">
+                  <div class="img-container">
+                     <a href="https://www.honeyglowhive.com/products/lip-butter?variant=39746249392311">
+                      <img class="passionflower" src="{{ section.settings.butter_img_3 | img_url: 'master'}}" width="165px" alt=""/>
+                     </a>
+                  </div>
+                  <div class="desc-txt">
+                    <a href="https://www.honeyglowhive.com/products/lip-butter?variant=39746249392311"><p> {{ section.settings.butter_title3 }} </p></a>
+                  </div>
+                  <div class="price-txt">
+                    <p class="product-price"> {{ section.settings.butter_price3 }} </p>
+                  </div>
+              	</div>
+              	<div class="product-container">
+                  <div class="img-container">
+                     <a href="https://www.honeyglowhive.com/products/lip-butter?variant=39746249425079">
+                      <img class="pomegranatedragonfruit" src="{{ section.settings.butter_img_4 | img_url: 'master'}}" width="165px" alt=""/>
+                     </a>
+                  </div>
+                  <div class="desc-txt">
+                    <a href="https://www.honeyglowhive.com/products/lip-butter?variant=39746249425079"><p> {{ section.settings.butter_title4 }} </p></a>
+                  </div>
+                  <div class="price-txt">
+                    <p class="product-price"> {{ section.settings.butter_price4 }} </p>
+                  </div>
+              	</div>
+              	<div class="product-container">
+                  <div class="img-container">
+                     <a href="https://www.honeyglowhive.com/products/lip-butter?variant=39746249457847">
+                      <img class="tangerine" src="{{ section.settings.butter_img_5 | img_url: 'master'}}" width="165px" alt=""/>
+                     </a>
+                  </div>
+                  <div class="desc-txt">
+                    <a href="https://www.honeyglowhive.com/products/lip-butter?variant=39746249457847"><p> {{ section.settings.butter_title5 }} </p></a>
+                  </div>
+                  <div class="price-txt">
+                    <p class="product-price"> {{ section.settings.butter_price5 }} </p>
+                  </div>
+              	</div>
+            </div>
+        </div>
+      <div class="img-container">
+      <img class="gradient-border" src="{{ section.settings.butter_border | img_url: 'master'}}" width="100%" alt=""/>
+    </div>
+    </section>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Lip Butters",
+    "settings": [
+        {
+            "id": "title",
+            "type": "text",
+            "label": "title",
+            "default": "taste our"
+        },
+        {
+            "id": "subtitle",
+            "type": "text",
+            "label": "subtitle",
+			"default": "plant butter for your pout"
+        },
+		{
+            "id": "butter_title1",
+            "type": "text",
+            "label": "product name",
+            "default": "mint matcha"
+        },
+		{
+            "id": "butter_price1",
+            "type": "text",
+            "label": "product price",
+            "default": "$8"
+        },
+		{
+            "id": "butter_img_1",
+            "type": "image_picker",
+            "label": "Add image"
+        },
+		{
+            "id": "butter_title2",
+            "type": "text",
+            "label": "product name",
+            "default": "coconut cremé"
+        },
+		{
+            "id": "butter_price2",
+            "type": "text",
+            "label": "product price",
+            "default": "$8"
+        },
+		{
+            "id": "butter_img_2",
+            "type": "image_picker",
+            "label": "Add image"
+        },
+		{
+            "id": "butter_title3",
+            "type": "text",
+            "label": "product name",
+            "default": "passion flower"
+        },
+		{
+            "id": "butter_price3",
+            "type": "text",
+            "label": "product price",
+            "default": "$8"
+        },
+		{
+            "id": "butter_img_3",
+            "type": "image_picker",
+            "label": "Add image"
+        },
+		{
+            "id": "butter_title4",
+            "type": "text",
+            "label": "product name",
+            "default": "pomegranate + dragonfruit"
+        },
+		{
+            "id": "butter_price4",
+            "type": "text",
+            "label": "product price",
+            "default": "$8"
+        },
+		{
+            "id": "butter_img_4",
+            "type": "image_picker",
+            "label": "Add image"
+        },
+		{
+            "id": "butter_title5",
+            "type": "text",
+            "label": "product name",
+            "default": "tangerine"
+        },
+		{
+            "id": "butter_price5",
+            "type": "text",
+            "label": "product price",
+            "default": "$8"
+        },
+		{
+            "id": "butter_img_5",
+            "type": "image_picker",
+            "label": "Add image"
+        },
+		{
+            "id": "butter_border",
+            "type": "image_picker",
+            "label": "Add image"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Lip Butters",
+            "category": "Custom"
+
+        }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

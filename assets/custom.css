@@ -1,0 +1,228 @@
+span[id^=spr_badge_]{
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1107px){
+  span[id^=spr_badge_]{
+    text-align:center;
+  }
+}
+  
+  
+@media only screen and (max-width: 767px){
+  .ProductItem__Info {
+  margin-top: 20px;
+  font-size: calc(var(--base-text-font-size) - (var(--default-text-font-size) - 12px));
+  max-width: 107px;
+  display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 767px){
+	.SectionHeader__Description {
+   	max-width: 250px;
+    display: inline-block;
+	}
+}
+  
+@media only screen and (max-width: 767px){
+  .stamped-summary-actions-newreview {
+    margin: 0px 0;
+  }
+}
+  
+@media only screen and (max-width: 1007px){
+	.stamped-badge {
+  		text-align:left;
+	}
+}
+
+@media only screen and (max-width: 640px){
+	.stamped-badge {
+  		margin-left: 25px;
+	}
+}
+
+@media only screen and (max-width: 640px){
+	.stamped-homepage {
+  		margin-left: -25px;
+	}
+}
+
+.stamped-fa-star-o {
+  opacity: 50% !important;
+}
+
+.stamped-reviews-filter {
+  display: none;
+}
+
+.lip-container {
+  margin-top: -6px;
+}
+
+
+#review-area-heading {
+  max-width: 1200px;
+  margin: 30px auto!important;
+  margin-bottom: -65px !important;
+  margin-top: 6em !important;
+}
+
+@media screen and (max-width: 768px) {
+	#review-area-heading {
+  	   margin-top: 4em !important;
+	}
+}
+
+@media screen and (max-width: 768px) {
+   .summary-overview {
+       margin-bottom: -10px !important;
+   }
+}
+
+.stamped-review-heading[data-count="0"][data-widget-language=""] {
+  text-align: center !important;
+}
+
+#product-cta-container {
+  max-width: 1230px;
+  text-align: center;
+  color: #E1BE87;
+  margin: 30px auto!important;
+  margin-bottom: 40px !important;
+  margin-top: -10px !important;
+  border-top: 2px solid #F2E4CE !important;
+}
+
+#product-cta-container2 {
+  max-width: 1230px;
+  text-align: center;
+  color: #E1BE87;
+  margin: 30px auto!important;
+  margin-bottom: 40px !important;
+  margin-top: -10px !important;
+  border-top: 2px solid #F2E4CE !important;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px!important;
+  list-style-position: outside;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+@media screen and (max-width: 900px) {
+	.product-cta-text {
+  		font-size: 14px !important;
+    	line-height: 24px;
+	}
+}
+
+#lipsection {
+  background: #fff;
+  padding-top: 95px;
+}
+
+#lipmobilesection {
+  background: #fff;
+}
+
+#section-16269937690ed42fae {
+  background: #fffdfb;
+  box-shadow: 0 32px 125px 0 rgb(205 150 62 / 15%);
+  padding-bottom: 50px !important;
+}
+
+@media screen and (max-width: 1006px) {
+  #section-16269937690ed42fae {
+    padding-bottom: 20px !important;
+  }
+}
+
+.sw-instagram-container .sw-instagram-box, .sw-instagram-container .sw-instagram-header {
+  background: #FBF7F1;
+}
+
+.sw-instagram-container .sw-instagram-item-img {
+  background: #F6EDDF !important;
+}
+
+#section-162699376163360803 {
+  padding-top: 0px !important;
+}
+
+#1598383261507 {
+  padding-bottom: 0px !important;
+}
+
+.stamped-form-input {
+  border: none !important;
+  box-shadow: 0 32px 125px 0 rgb(205 150 62 / 15%);
+}
+
+.stamped-form-input-text {
+    padding: 0 20px !important;
+}
+
+.stamped-form-input-email {
+    padding: 0 20px !important;
+}
+
+#product-cta-grid {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+  list-style-position: outside;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.pcta{
+  direction: rtl;
+  list-style: none;
+  margin: 0 15px 0 15px;
+  white-space: nowrap;
+}
+
+@media only screen and (min-width: 652px){
+	.guiltfree {
+ 	  margin-top: 200px !important;
+	}
+}
+
+@media only screen and (min-width: 1008px){
+	#shopify-section-162699376163360803 {
+  	  margin-top: -100px;
+	}
+}
+
+ul#product-cta-grid::-webkit-scrollbar {
+    display: none;
+}
+
+
+#slider{
+  margin-top:35px;
+}
+
+@media only screen and (max-width:480px){
+  #product-cta-container{
+    display:none!important;
+  }
+}
+
+@media only screen and (min-width:481px){
+  #product-cta-container2{
+    display:none!important;
+  }
+}
+
+@media only screen and (max-width:480px) {
+  .Header__FlexItem--logo {
+    margin-left: 20px;
+  }
+}
+
+#stamped-main-widget>div>div.stamped-header>div>span>span.stamped-summary-actions-newreview{
+  margin-top:32px;
+}
